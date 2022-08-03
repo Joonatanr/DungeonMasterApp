@@ -29,24 +29,22 @@ namespace DungeonMasterApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.initiativeToken1 = new DungeonMasterApp.InitiativeToken();
+            this.initiativeTable1 = new DungeonMasterApp.InitiativeTable();
             this.SuspendLayout();
             // 
-            // initiativeToken1
+            // initiativeTable1
             // 
-            this.initiativeToken1.Location = new System.Drawing.Point(31, 28);
-            this.initiativeToken1.Name = "initiativeToken1";
-            this.initiativeToken1.Size = new System.Drawing.Size(345, 36);
-            this.initiativeToken1.TabIndex = 0;
-            this.initiativeToken1.TokenInitiative = 0;
-            this.initiativeToken1.TokenName = "";
+            this.initiativeTable1.Location = new System.Drawing.Point(12, 12);
+            this.initiativeTable1.Name = "initiativeTable1";
+            this.initiativeTable1.Size = new System.Drawing.Size(350, 389);
+            this.initiativeTable1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.initiativeToken1);
+            this.Controls.Add(this.initiativeTable1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,7 +53,7 @@ namespace DungeonMasterApp
 
         #endregion
 
-        private InitiativeToken initiativeToken1;
+        private InitiativeTable initiativeTable1;
     }
 }
 

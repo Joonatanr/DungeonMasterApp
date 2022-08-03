@@ -39,7 +39,7 @@ namespace DungeonMasterApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTokenName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxTokenName.Location = new System.Drawing.Point(3, 3);
+            this.textBoxTokenName.Location = new System.Drawing.Point(3, 2);
             this.textBoxTokenName.Name = "textBoxTokenName";
             this.textBoxTokenName.Size = new System.Drawing.Size(260, 29);
             this.textBoxTokenName.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace DungeonMasterApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxInitiative.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBoxInitiative.Location = new System.Drawing.Point(269, 3);
+            this.textBoxInitiative.Location = new System.Drawing.Point(269, 2);
             this.textBoxInitiative.Name = "textBoxInitiative";
             this.textBoxInitiative.Size = new System.Drawing.Size(73, 29);
             this.textBoxInitiative.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace DungeonMasterApp
             this.Controls.Add(this.textBoxInitiative);
             this.Controls.Add(this.textBoxTokenName);
             this.Name = "InitiativeToken";
-            this.Size = new System.Drawing.Size(345, 36);
+            this.Size = new System.Drawing.Size(345, 33);
             this.ResumeLayout(false);
             this.PerformLayout();
 
