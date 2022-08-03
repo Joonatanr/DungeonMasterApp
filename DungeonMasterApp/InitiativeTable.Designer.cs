@@ -31,11 +31,14 @@ namespace DungeonMasterApp
         {
             this.buttonAddToken = new System.Windows.Forms.Button();
             this.groupBoxInitiativeTokens = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBoxInitiativeTokens.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAddToken
             // 
-            this.buttonAddToken.Location = new System.Drawing.Point(272, 363);
+            this.buttonAddToken.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAddToken.Location = new System.Drawing.Point(330, 374);
             this.buttonAddToken.Name = "buttonAddToken";
             this.buttonAddToken.Size = new System.Drawing.Size(75, 23);
             this.buttonAddToken.TabIndex = 0;
@@ -45,11 +48,26 @@ namespace DungeonMasterApp
             // 
             // groupBoxInitiativeTokens
             // 
+            this.groupBoxInitiativeTokens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxInitiativeTokens.Controls.Add(this.panel1);
             this.groupBoxInitiativeTokens.Location = new System.Drawing.Point(3, 3);
             this.groupBoxInitiativeTokens.Name = "groupBoxInitiativeTokens";
-            this.groupBoxInitiativeTokens.Size = new System.Drawing.Size(344, 354);
+            this.groupBoxInitiativeTokens.Size = new System.Drawing.Size(402, 365);
             this.groupBoxInitiativeTokens.TabIndex = 1;
             this.groupBoxInitiativeTokens.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Location = new System.Drawing.Point(0, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(396, 346);
+            this.panel1.TabIndex = 0;
             // 
             // InitiativeTable
             // 
@@ -58,7 +76,8 @@ namespace DungeonMasterApp
             this.Controls.Add(this.groupBoxInitiativeTokens);
             this.Controls.Add(this.buttonAddToken);
             this.Name = "InitiativeTable";
-            this.Size = new System.Drawing.Size(350, 389);
+            this.Size = new System.Drawing.Size(408, 400);
+            this.groupBoxInitiativeTokens.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -67,5 +86,6 @@ namespace DungeonMasterApp
 
         private System.Windows.Forms.Button buttonAddToken;
         private System.Windows.Forms.GroupBox groupBoxInitiativeTokens;
+        private System.Windows.Forms.Panel panel1;
     }
 }

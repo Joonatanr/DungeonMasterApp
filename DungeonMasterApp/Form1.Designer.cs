@@ -36,7 +36,7 @@ namespace DungeonMasterApp
             // 
             this.initiativeTable1.Location = new System.Drawing.Point(12, 12);
             this.initiativeTable1.Name = "initiativeTable1";
-            this.initiativeTable1.Size = new System.Drawing.Size(350, 389);
+            this.initiativeTable1.Size = new System.Drawing.Size(430, 411);
             this.initiativeTable1.TabIndex = 0;
             // 
             // Form1
