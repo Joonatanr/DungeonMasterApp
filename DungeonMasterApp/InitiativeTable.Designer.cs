@@ -96,6 +96,7 @@ namespace DungeonMasterApp
             this.buttonPrev.TabIndex = 3;
             this.buttonPrev.Text = "Prev";
             this.buttonPrev.UseVisualStyleBackColor = true;
+            this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
             // 
             // groupBox1
             // 

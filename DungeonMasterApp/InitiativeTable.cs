@@ -63,7 +63,7 @@ namespace DungeonMasterApp
         {
             if ((sender as InitiativeToken).IsActive)
             {
-                setNextInitiative();
+                setNextInitiative(true);
             }
             
             this.panel1.Controls.Remove(sender as Control);
@@ -108,7 +108,11 @@ namespace DungeonMasterApp
             return res;
         }
 
-        private void setNextInitiative()
+        /// <summary>
+        /// direction - false is reverse, true is forward. 
+        /// </summary>
+        /// <param name="direction"></param>
+        private void setNextInitiative(bool direction)
         {
             List<InitiativeToken> tokens = selectInitiativeTokens();
 
@@ -122,14 +126,29 @@ namespace DungeonMasterApp
                     if (SortedList[x].IsActive)
                     {
                         SortedList[x].IsActive = false;
-                        if (x == SortedList.Count - 1)
+                        if (direction)
                         {
-                            /* TODO : Add callback here. End of turn. */
-                            SortedList[0].IsActive = true;
+                            if (x == SortedList.Count - 1)
+                            {
+                                /* TODO : Add callback here. End of turn. */
+                                SortedList[0].IsActive = true;
+                            }
+                            else
+                            {
+                                SortedList[x + 1].IsActive = true;
+                            }
                         }
                         else
                         {
-                            SortedList[x + 1].IsActive = true;
+                            if (x == 0)
+                            {
+                                /* TODO : Add callback here. End of turn. */
+                                SortedList[SortedList.Count - 1].IsActive = true;
+                            }
+                            else
+                            {
+                                SortedList[x - 1].IsActive = true;
+                            }
                         }
                         break;
                     }
@@ -139,7 +158,12 @@ namespace DungeonMasterApp
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
-            setNextInitiative();
+            setNextInitiative(true);
+        }
+
+        private void buttonPrev_Click(object sender, EventArgs e)
+        {
+            setNextInitiative(false);
         }
 
         private void InitiativeTable_Load(object sender, EventArgs e)
@@ -151,5 +175,7 @@ namespace DungeonMasterApp
         {
 
         }
+
+
     }
 }
