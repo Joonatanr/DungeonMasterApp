@@ -62,7 +62,8 @@ namespace DungeonMasterApp
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(316, 4);
+            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.Location = new System.Drawing.Point(316, 3);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(30, 27);
             this.buttonDelete.TabIndex = 2;

@@ -25,6 +25,25 @@ namespace DungeonMasterApp
             set { _myInitiative = value; textBoxInitiative.Text = value.ToString(); }
         }
 
+        private Boolean _isActive = false;
+
+        public Boolean IsActive
+        {
+            get { return _isActive; }
+            set 
+            { 
+                _isActive = value;
+                if (_isActive)
+                {
+                    this.BackColor = Color.Blue;
+                }
+                else
+                {
+                    this.BackColor = SystemColors.Control;
+                }
+            }
+        }
+
         public delegate void InitiativeTokenEvent(object sender);
 
         public InitiativeTokenEvent InitiativeChanged;
